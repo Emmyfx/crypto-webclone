@@ -29,8 +29,8 @@ nav {
     left: 0;
     right: 0;
     z-index: 1000;    
-    background-color: #fff;
-    border: 1px solid hsl(0, 0%, 50%);
+    background-color: rgb(235, 235, 235);
+    border-bottom: 1px solid hsl(0, 0%, 50%);
 }
 nav .logo img {
     width: 80%;
@@ -69,6 +69,12 @@ nav ul li a:last-child:hover {
 
 /* Navbar Responsiveness */
 
+@media (min-width: 600px) and (max-width: 1000px) {
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
 @media screen and (max-width: 900px) {
     nav {
         padding: 10px 30px;
@@ -79,13 +85,13 @@ nav ul li a:last-child:hover {
         top: 80px;
         right: 0;
         bottom: 0;
-        width: 300px;
+        width: 250px;
         min-height: 100vh;
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
         gap: 0;
-        background-color: rgba(107, 107, 107, 0.2);
+        background-color: rgba(173, 173, 173, 0.2);
         backdrop-filter: blur(5px);
         overflow-y: hidden;
     }
@@ -174,7 +180,7 @@ nav ul li a:last-child:hover {
         width: 90%;
         display: flex;
         flex-direction: column;
-        margin: 150px auto 50px auto;
+        margin: 100px auto 50px auto;
     }
     .container1 h1  {
         width: 100%;
@@ -218,7 +224,7 @@ nav ul li a:last-child:hover {
 @media (min-width: 601px) and (max-width: 900px){
     .container {
         width: 80%;
-        margin: 150px auto 50px auto;
+        margin: 100px auto 50px auto;
         display: flex;
         flex-direction: column;
     }
@@ -255,7 +261,7 @@ nav ul li a:last-child:hover {
 @media (min-width: 901px) and (max-width: 1300px) {
     .container {
         width: 80%;
-        margin: 200px auto 50px auto;
+        margin: 180px auto 50px auto;
         display: grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 20px;
@@ -290,7 +296,7 @@ nav ul li a:last-child:hover {
 @media (min-width: 1301px) and (max-width: 1500px) {
     .container {
         width: 80%;
-        margin: 200px auto 50px auto;
+        margin: 180px auto 50px auto;
         display: grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 20px;
@@ -407,16 +413,16 @@ nav ul li a:last-child:hover {
         margin: 50px auto;
     }
     .about-us-container2 h1 {
-        font-size: 35px;
+        font-size: 40px;
     }
     .about-us-container2 h2 {
-        font-size: 18px;
+        font-size: 20px;
         margin-bottom: 18px;
     }
     .about-us-container2 p {
         width: 100%;
         margin-bottom: 45px;
-        font-size: 17px;
+        font-size: 18px;
     }
     .about-us-container2 button {
         margin-bottom: 20px;
@@ -425,6 +431,15 @@ nav ul li a:last-child:hover {
         width: 100%;
         margin-top: 30px;
     }
+}
+
+@media (min-width: 901px) and (max-width: 1200px) {
+    .about-us-container2 h2 {
+        font-size: 22px;
+    }
+    .about-us-container2 p {
+        font-size: 18px;
+    }   
 }
 
 @media screen and (max-width: 900px) {
@@ -549,6 +564,12 @@ nav ul li a:last-child:hover {
         width: 80%;
         margin: 50px auto;
     }
+    .features-container h2 {
+        font-size: 20px;
+    }
+    .features-info-1 div p {
+        font-size: 20px;
+    }
     .features-info {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -559,6 +580,15 @@ nav ul li a:last-child:hover {
 @media (min-width: 1001px) and (max-width: 1300px) {
     .features-container {
         width: 90%;
+    }
+    .features-container h2 {
+        font-size: 22px;
+    }
+    .features-info-1 div h3 {
+        font-size: 22px;
+    }
+    .features-info-1 div p {
+        font-size: 17px;
     }
 }
 
@@ -595,7 +625,7 @@ nav ul li a:last-child:hover {
 }
 .direction-inner-container div {
     text-align: center;
-    padding: 30px;
+    padding: 40px;
     background-color: rgb(250, 250, 250);
     box-shadow: 10px 15px 45px rgba(33, 54, 70, 0.3);
 }
@@ -640,6 +670,9 @@ nav ul li a:last-child:hover {
     .direction-container {
         width: 80%;
     }
+    .direction-container h2 {
+        font-size: 20px;
+    }
     .direction-inner-container {
         column-gap: 15px;
     }
@@ -649,26 +682,33 @@ nav ul li a:last-child:hover {
         width: 90%;
     }
 }
+@media (min-width: 901px) and (max-width: 1300px) {
+    .direction-container h2 {
+        font-size: 20px;
+    }
+    .direction-inner-container div p {
+        font-size: 18px;
+    }
+}
 
 /* Review Section */
 
 .review {
     width: 100%;
     margin: auto;
-    border: 1px solid red;
+    border-top: 2px solid #3e2bce;
+    border-bottom: 1px solid #2dd3aa;
     color: #fff;
     background: linear-gradient(to right, #3e2bce 0%, #2dd3aa 100%, #2dd3aa 100%, #2dd3aa 100%);
 }
 .review-container {
-    width: 80%;
+    width: 70%;
     margin: 30px auto;
-    border: 1px solid rgb(0, 0, 0);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 30px;
+    column-gap: 50px;
 }
 .review-container div {
-    border: 1px solid #fff;
     display: flex;
     column-gap: 10px;
     padding: 10px;
@@ -703,10 +743,371 @@ nav ul li a:last-child:hover {
         grid-template-columns: 1fr 1fr;
         gap: 20px;
     }
+    .review-container div p {
+        font-size: 17px;
+    }
 }
 
 @media (min-width: 601px) and (max-width: 1400px) {
     .review-container {
+        width: 80%;
+        gap: 10px;
+    }
+    .review-container div p {
+        font-size: 15px;
+    }
+}
+
+/* Team Section */
+
+.team {
+    width: 100%;
+    margin: auto;
+}
+.team-container {
+    width: 80%;
+    margin: 100px auto;
+    padding: 10px;
+}
+
+.team-container h1 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 30px;
+    color: #20509e;
+    margin-bottom: 20px;
+}
+.team-container h2 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    color: #75849a;
+    margin-bottom: 30px;
+}
+.team-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+    margin-top: 20px;
+}
+.team-info-1 {
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(250, 250, 250);
+    box-shadow: 10px 10px 30px rgba(33, 54, 70, 0.3);
+}
+.team-info-1 img {
+    width: 100%;
+    height: 160px;
+    border-radius: 100px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.team-info-1 h4 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    color: #20509e;
+}
+.team-info-1 p {
+    color: #75849a;
+    margin-bottom: 10px;
+    font-weight: 300;
+    font-size: 15px;
+}
+.team-info-1 div {
+    margin-top: 20px;
+    padding: 10px;
+}
+.team-info-1 div i {
+    font-size: 20px;
+    color: #75849a;
+    margin-right: 10px;
+    transition: all 0.8s ease;
+}
+.team-info-1 div i:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    color: #20509e;
+}
+.team-info-1 div i:active {
+    transform: scale(0.95);
+}
+
+/* Media Responsiveness for Team Section */
+
+@media screen and (max-width: 400px) {
+    .team-container {
+        width: 90%;
+        padding: 0px;
+    }
+    .team-container h1 {
+        font-size: 20px;
+    }
+    .team-container h2 {
+        font-size: 15px;
+    }
+    .team-info {
+        grid-template-columns: 1fr;
+        row-gap: 25px;
+    }
+    .team-info-1 img {
+        width: 250px;
+        height: 250px;
+        border-radius: 130px;
+    }
+    .team-info-1 h4 {
+        font-size: 20px;
+    }
+    .team-info-1 p {
+        font-size: 16px;
+    }
+    .team-info-1 div {
+        margin-top: 10px;
+    }
+}
+@media (min-width: 401px) and (max-width: 600px) {
+    .team-container {
+        width: 90%;
+        padding: 0px;
+    }
+    .team-container h1 {
+        font-size: 20px;
+    }
+    .team-container h2 {
+        font-size: 15px;
+    }
+    .team-info {
+        grid-template-columns: 1fr;
+        row-gap: 25px;
+    }
+    .team-info-1 img {
+        width: 250px;
+        height: 250px;
+        border-radius: 130px;
+    }
+    .team-info-1 h4 {
+        font-size: 22px;
+    }
+    .team-info-1 p {
+        font-size: 18px;
+    }
+    .team-info-1 div {
+        margin-top: 10px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1000px) {
+    .team-container {
         width: 85%;
+    }
+    .team-info {
+        grid-template-columns: 1fr 1fr;
+        gap: 15px 20px;
+        margin-top: 50px;
+    }
+    .team-container h1{
+        font-size: 35px;
+    }
+    .team-container h2 {
+        font-size: 23px;
+    }
+    .team-info-1 img {
+        height: 180px;
+        width: 180px;
+        border-radius: 100px;
+    }
+    .team-info-1 h4 {
+        font-size: 22px;
+    }
+    .team-info-1 p {
+        font-size: 20px;
+    }
+    .team-info-1 div {
+        margin-top: 10px;
+    }
+    .team-info-1 div i {
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 1001px) and (max-width: 1500px) {
+    .team-container {
+        width: 85%;
+    }
+    .team-container h1 {
+        font-size: 40px;
+    }
+    .team-container h2 {
+        font-size: 23px;
+    }
+    .team-info {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+    .team-info-1 img {
+        height: 200px;
+        width: 200px;
+        border-radius: 100px;
+    }
+    .team-info-1 h4 {
+        font-size: 22px;
+    }
+    .team-info-1 p {
+        font-size: 18px;
+    }
+    .team-info-1 div {
+        margin-top: 10px;
+    }
+    .team-info-1 div i {
+        font-size: 25px;
+    }
+}
+
+/* NewsLetter Section */
+
+.newsletter {
+    border-top: 2px solid #3e2bce;
+    border-bottom: 1px solid #2dd3aa;
+    width: 100%;
+    margin: auto;
+    background: linear-gradient(to right, #3e2bce 0%, #2dd3aa 100%, #2dd3aa 100%, #2dd3aa 100%);
+}
+.newsletter-container {
+    color: #fff;
+    width: 70%;
+    border: 1px solid yellow;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3rem;
+    padding: 10px;
+}
+.newsletter-container div h3 {
+    font-weight: 400;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.newsletter-container div p {
+    font-size: 17px;
+}
+.newsletter-container div input, .newsletter-container div button {
+    margin-top: 10px;
+    padding: 10px 30px;
+    height: 45px;
+    font-size: 15px;
+    border: none;
+}
+.newsletter-container div input {
+    background-color: rgba(240, 240, 240, 0.3);
+    border-radius: 100px;
+    border-radius: 50px 0px 0px 50px;
+}
+.newsletter-container div button {
+    border-radius: 0px 50px 50px 0px;
+    margin-left: -3px;
+    font-weight: 550;
+    color: #20509e;
+    margin-bottom: 20px;
+    transition: all 0.8s ease;
+}
+.newsletter-container div button:hover {
+    background-color: #000;
+    color: #fff;
+    box-shadow: inset 5px 5px 15px rgba(255, 255, 255, 0.2);
+}
+.newsletter-container div {
+    border: 1px solid red;
+}
+
+/* Media Responsiveness For Newsletter */
+
+@media screen and (max-width: 600px) {
+    .newsletter-container {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .newsletter-container div h3, .newsletter-container div p {
+        text-align: center;
+    }
+    .newsletter-container div h3 {
+        font-size: 22px;
+        font-weight: 550;
+    }
+    .newsletter-container div p {
+        font-size: 16px;
+    }
+    .newsletter-container div input, .newsletter-container div button {
+        font-size: 16px;
+        display: block;
+    }
+    .newsletter-container div input {
+        border-radius: 30px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .newsletter-container div button {
+        border-radius: 30px;
+        display: flex;
+        justify-self: center;
+    }
+    .newsletter-info {
+        padding: 5px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1000px) {
+    .newsletter-container {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .newsletter-container div h3, .newsletter-container div p {
+        text-align: center;
+    }
+    .newsletter-container div input, .newsletter-container div button {
+        display: block;
+    }
+    .newsletter-container div input {
+        border-radius: 30px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .newsletter-container div button {
+        border-radius: 30px;
+        display: flex;
+        justify-self: center;
+    }
+    .newsletter-info {
+        padding: 5px;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+    .newsletter-container {
+        width: 80%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+    .newsletter-container div input, .newsletter-container div button {
+        display: block;
+    }
+    .newsletter-container div input {
+        border-radius: 30px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .newsletter-container div button {
+        border-radius: 30px;
+        display: flex;
+        justify-self: center;
+    }
+    .newsletter-info {
+        padding: 5px;
     }
 }
