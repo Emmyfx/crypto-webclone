@@ -977,7 +977,6 @@ nav ul li a:last-child:hover {
 .newsletter-container {
     color: #fff;
     width: 70%;
-    border: 1px solid yellow;
     margin: 20px auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1017,10 +1016,6 @@ nav ul li a:last-child:hover {
     color: #fff;
     box-shadow: inset 5px 5px 15px rgba(255, 255, 255, 0.2);
 }
-.newsletter-container div {
-    border: 1px solid red;
-}
-
 /* Media Responsiveness For Newsletter */
 
 @media screen and (max-width: 600px) {
