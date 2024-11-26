@@ -332,7 +332,7 @@ nav ul li a:last-child:hover {
 }
 .about-us-container {
     width: 80%;
-    margin: 100px auto;
+    margin: 80px auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 20px;
@@ -625,7 +625,7 @@ nav ul li a:last-child:hover {
 }
 .direction-inner-container div {
     text-align: center;
-    padding: 40px;
+    padding: 30px;
     background-color: rgb(250, 250, 250);
     box-shadow: 10px 15px 45px rgba(33, 54, 70, 0.3);
 }
@@ -773,7 +773,7 @@ nav ul li a:last-child:hover {
 .team-container h1 {
     text-align: center;
     font-weight: 400;
-    font-size: 30px;
+    font-size: 40px;
     color: #20509e;
     margin-bottom: 20px;
 }
@@ -853,9 +853,9 @@ nav ul li a:last-child:hover {
         row-gap: 25px;
     }
     .team-info-1 img {
-        width: 250px;
-        height: 250px;
-        border-radius: 130px;
+        width: 150px;
+        height: 150px;
+        border-radius: 100px;
     }
     .team-info-1 h4 {
         font-size: 20px;
@@ -883,9 +883,9 @@ nav ul li a:last-child:hover {
         row-gap: 25px;
     }
     .team-info-1 img {
-        width: 250px;
-        height: 250px;
-        border-radius: 130px;
+        width: 180px;
+        height: 180px;
+        border-radius: 100px;
     }
     .team-info-1 h4 {
         font-size: 22px;
@@ -989,7 +989,7 @@ nav ul li a:last-child:hover {
     margin-bottom: 10px;
 }
 .newsletter-container div p {
-    font-size: 17px;
+    font-size: 15px;
 }
 .newsletter-container div input, .newsletter-container div button {
     margin-top: 10px;
@@ -1105,4 +1105,240 @@ nav ul li a:last-child:hover {
     .newsletter-info {
         padding: 5px;
     }
+}
+
+/* Latest News Section */
+
+.latestnews {
+    width: 100%;
+    margin: auto;
+}
+.latestnews-container {
+    width: 70%;
+    margin: 100px auto;
+}
+.latestnews-container h1 {
+    font-weight: 400;
+    font-size: 40px;
+    color: #20509e;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.latestnews-container h2 {
+    font-weight: 300;
+    font-size: 18px;
+    text-align: center;
+    color: #75849a;
+    margin-bottom: 20px;
+}
+.latestnews-info {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+}
+.latestnews-info div {
+    padding: 5px;
+    background-color: rgb(250, 250, 250);
+}
+.latestnews-info div img {
+    width: 100%;
+}
+.latestnews-info div h3 {
+    font-weight: 400;
+    color: #16d0c5;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.latestnews-info div h4 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #20509e;
+}
+.latestnews-inner-info {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    gap: .8rem;
+    margin: 10px 0px;
+}
+.latestnews-inner-info p{
+    font-size: 12px;
+}
+.latestnews-inner-info p i {
+    color: #16d0c5;
+}
+
+/* Media Responsiveness For Latest News Section */
+
+@media screen and (max-width: 600px) {
+    .latestnews-container {
+        width: 90%;
+        margin: 50px auto;
+    }
+    .latestnews-container h1 {
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+    .latestnews-container h2 {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .latestnews-info {
+        margin-top: 20px;
+        grid-template-columns: 1fr;
+    }
+    .latestnews-info div h4 {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .latestnews-container {
+        width: 90%;
+        margin: 50px auto;
+    }
+    .latestnews-container h1 {
+        font-size: 30px;
+    }
+    .latestnews-container h2 {
+        font-size: 16px;
+    }
+    .latestnews-inner-info {
+        display: flex;
+        gap: .2rem;
+    }
+    .latestnews-inner-info p{
+        font-size: 11px;
+    }
+    .latestnews-info {
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 901px) and (max-width: 1200) {
+    .latestnews-container {
+        width: 80%;
+    }
+}
+
+/* Socals Section */
+
+.socials {
+    width: 100%;
+    margin: auto;
+    background-color: rgb(235, 235, 235);
+    border-top: 1px solid #75849a;
+    border-bottom: 1px solid #75849a;
+}
+.socials-container {
+    width: 70%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 3rem;
+}
+.socials-container div {
+    padding: 10px;
+}
+.socials-container div img {
+    width: 40%;
+    margin-bottom: 20px;
+}
+.socials-container div h5 {
+    font-weight: 400;
+    color: #75849a;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+.socials-author {
+    color: #acb9cc;
+    font-size: 14px;
+}
+.socials-author a {
+    text-decoration: none;
+    font-size: 14px;
+}
+.socials-author a:active {
+    color: #20509e;
+}
+.socials-container div h6 {
+    font-weight: 500;
+    color: #20509e;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.socials-container div p {
+    font-size: 14px;
+    color: #75849a;
+    margin-bottom: 5px;
+}
+.socials-container div i {
+    font-size: 25px;
+    margin-right: 15px;
+}
+.socials1 {
+    color: #20509e;
+}
+.socials2 {
+    color: #E1306C;
+}
+.socials3 {
+    color: #1DA1F2;
+}
+.socials4 {
+    color: #FF4500;
+}
+.socials1:hover, .socials2:hover, .socials3:hover, .socials4:hover {
+    cursor: pointer;
+}
+
+/* Media Responsiveness For Socials */
+
+@media screen and (max-width: 600px) {
+    .socials-container {
+        width: 90%;
+        margin: 30px auto;
+        grid-template-columns: 1fr;
+        row-gap: 1rem;
+    }
+    .socials-container div {
+        padding: 5px;
+    }
+    .socials-container div img {
+        width: 30%;
+        margin-bottom: 10px;
+    }
+    .socials-container div h5 {
+        margin-bottom: 10px;
+    }
+    .socials-container div h6 {
+        margin-bottom: 10px;
+    }
+    .socials-container div p {
+        margin-bottom: 10px;
+    }
+    
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .socials-container {
+        width: 80%;   
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem 2rem;
+    }   
+    .socials-container div h6 {
+        font-size: 18px;
+    }
+    .socials-container div p {
+        font-size: 16px;
+    }  
+}
+
+@media (min-width: 901px) and (max-width: 1200px) {
+    .socials-container {
+        width: 70%;   
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem 2rem;
+    }     
 }
